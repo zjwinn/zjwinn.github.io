@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zachary J. Winn, Ph.D. – Research Geneticist</title>
+  <!-- load your CSS from /static/style.css -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=2">
+</head>
+<body>
+  <div class="container">
+    
+    <header>
+      <h1>Zachary J. Winn, Ph.D.</h1>
+      <h2>Plant Breeder, Quantitative Geneticist, Bioinformatician, and Data Analyst</h2>
+    </header>
+    
+    <!-- Profile section -->
+    <section class="profile">
+      <img src="{{ url_for('static', filename='headshot.jpg') }}" alt="Zachary Winn Headshot">
+      <div class="bio">
+        <h3>Biography</h3>
+        <p class="justified">Dr. Zachary J. Winn specializes in plant breeding, quantitative genetics, and data infrastructure. With a Ph.D. in Plant Breeding and Genetics from NC State, his research focuses on developing innovative approaches to enhance crop resilience and optimize breeding programs. He develops high-throughput bioinformatic tools, manages group computing infrastructure, and assembles reference genomes for various plant species. Zachary’s work spans genomic prediction, machine learning, and quantitative genetics, with a strong publication record addressing a broad range of topics in trait architecture, breeding optimization, and computational methods in plant science.</p>
+        <a href="{{ url_for('static', filename='Zachary James Winn CV.pdf') }}" target="_blank">Curriculum Vitae</a>
+      </div>
+    </section>
+    
+    <!-- Links and Contact -->
+    <section>
+      <h3>Links</h3>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:zwinn@outlook.com">zwinn@outlook.com</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/zjwinn" target="_blank">github.com/zjwinn</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/zwinn/" target="_blank">linkedin.com/in/zwinn</a></li>
+        <li><strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-1543-1527" target="_blank">0000-0003-1543-1527</a></li>
+      </ul>
+    </section>
+    
+    <!-- Education Section -->
+    <section>
+      <h3>Education</h3>
+      <ul>
+        <li><strong>North Carolina State University</strong> – PhD in Crop Science (2019–2022)</li>
+        <li><strong>University of Arkansas</strong> – MS in Crop Science (2017–2019)</li>
+        <li><strong>University of Arkansas</strong> – BA in Music & Biology (2012–2016)</li>
+      </ul>
+    </section>
+    
+    <!-- Research Experience Section -->
+    <section>
+      <h3>Research Experience</h3>
+      <ul>
+        <li><strong>USDA-ARS</strong> – Postdoctoral Research Geneticist (2024–Present)</li>
+        <li><strong>Colorado State University</strong> – Postdoctoral Research Scholar (2022–2024)</li>
+        <li><strong>North Carolina State University</strong> – Research Assistant (2019–2022)</li>
+        <li><strong>University of Arkansas</strong> – Research Assistant (2017–2019)</li>
+      </ul>
+    </section>
+    
+    <!-- Publications Button -->
+    <p style="text-align: center; margin: 30px 0;">
+      <a href="/publications" class="btn-primary">View Publications</a>
+    </p>
+    
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Zachary J. Winn</p>
+    </footer>
+    
+  </div>
+</body>
+</html>
